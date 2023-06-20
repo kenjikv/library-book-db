@@ -1,3 +1,6 @@
+ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'password';
+flush privileges;
+
 CREATE TABLE IF NOT EXISTS book (
     id CHAR(36) NOT NULL,
     name VARCHAR(100) NOT NULL,
